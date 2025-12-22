@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 背景 -->
+    <ImageView
+        android:id="@+id/ivBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/count_ducks_bg" />
+
+    <!-- 喊话气泡（图2：有序投数） -->
+    <TextView
+        android:id="@+id/tvBubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="有序投数"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@android:color/darker_gray"
+        android:alpha="0.75"
+        android:visibility="gone"
+        android:layout_marginTop="95dp"
+        android:layout_marginLeft="35dp" />
+
+    <!-- 喇叭（点击发送广播） -->
+    <ImageView
+        android:id="@+id/ivHorn"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/horn"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="60dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- 三只鸭子 -->
+    <ImageView
+        android:id="@+id/ivDuck1"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/duck"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="180dp"
+        android:layout_marginLeft="45dp" />
+
+    <ImageView
+        android:id="@+id/ivDuck2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/duck"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="180dp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/ivDuck3"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/duck"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="180dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="45dp" />
+
+    <!-- 数字标记（红点1/2/3） -->
+    <TextView
+        android:id="@+id/tvNum1"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:background="@android:color/holo_red_light"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_alignLeft="@id/ivDuck1"
+        android:layout_marginLeft="30dp"
+        android:layout_above="@id/ivDuck1"
+        android:layout_marginBottom="-8dp" />
+
+    <TextView
+        android:id="@+id/tvNum2"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:background="@android:color/holo_red_light"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_alignLeft="@id/ivDuck2"
+        android:layout_marginLeft="30dp"
+        android:layout_above="@id/ivDuck2"
+        android:layout_marginBottom="-8dp" />
+
+    <TextView
+        android:id="@+id/tvNum3"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:background="@android:color/holo_red_light"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_alignLeft="@id/ivDuck3"
+        android:layout_marginLeft="30dp"
+        android:layout_above="@id/ivDuck3"
+        android:layout_marginBottom="-8dp" />
+
+</RelativeLayout>
