@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">数鸭子</string>
+    <string name="ordered_broadcast">有序报数</string>
 </resources>

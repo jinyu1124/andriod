@@ -12,12 +12,12 @@
         android:scaleType="fitXY"
         android:src="@drawable/count_ducks_bg" />
 
-    <!-- 喊话气泡（图2：有序投数） -->
+    <!-- 喊话气泡（图2：有序报数） -->
     <TextView
         android:id="@+id/tvBubble"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="有序投数"
+        android:text="@string/ordered_broadcast"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         android:paddingLeft="14dp"
